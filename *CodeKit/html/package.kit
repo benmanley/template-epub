@@ -2,7 +2,7 @@
 <package xmlns="http://www.idpf.org/2007/opf" unique-identifier="bookid" version="3.0" <!--$package-prefix-->>
   <metadata xmlns="http://www.idpf.org/2007/opf" xmlns:dc="http://purl.org/dc/elements/1.1/" >
 		<dc:title><!--$book-title--></dc:title>
-		<dc:language <!-- $book-id-->><!--$book-urn--></dc:identifier>
+		<dc:identifier <!-- $book-id-->><!--$book-urn--></dc:identifier>
 		<dc:language><!--$book-language--></dc:language>
 		<dc:date ><!--$book-pub-date--></dc:date>
 		<meta property="dcterms:modified"><!--$book-mod-date--></meta>
@@ -15,16 +15,16 @@
 	<!--Kindle
 		<meta name="original-resolution" content="1024x600"/>
 		<meta name="book-type" content="children"/>-->
-	<!--Illustrator-->
-		<dc:creator id="illustrator"><!--$contributor-illustrator--></dc:creator>
-		<meta refines="#illustrator" property="file-as"><!--$contributor-illustrator-file-as--></meta>
-		<meta refines="#illustrator" property="role" scheme="marc:relators">ill</meta>
-		<meta refines="#illustrator" property="display-seq">2</meta>
 	<!--Author-->
 		<dc:creator id="author"><!--$contributor-author--></dc:creator>
 		<meta refines="#author" property="file-as"><!--$contributor-author-file-as--></meta>
 		<meta refines="#author" property="role" scheme="marc:relators">aut</meta>
 		<meta refines="#author" property="display-seq">1</meta>
+	<!--Illustrator-->
+		<dc:creator id="illustrator"><!--$contributor-illustrator--></dc:creator>
+		<meta refines="#illustrator" property="file-as"><!--$contributor-illustrator-file-as--></meta>
+		<meta refines="#illustrator" property="role" scheme="marc:relators">ill</meta>
+		<meta refines="#illustrator" property="display-seq">2</meta>
 	<!--Publisher & Rights-->
 		<dc:publisher><!--$rights-publisher--></dc:publisher>
 		<dc:rights><!--$rights-copyright--></dc:rights>
@@ -32,10 +32,10 @@
  	</metadata>
  	<manifest>
 		<!--supplementary -->
-		<item id="toc-xhtml" media-type="application/xhtml+xml" href="/OEBPS/toc.xhtml" properties="nav" />
+		<item id="toc" media-type="application/xhtml+xml" href="/OEBPS/toc.xhtml" properties="nav" />
 	    <item id="css" href="/OEBPS/css/stylesheet.css" media-type="text/css" />
-		<item id="css-01" href="/OEBPS/css/page-01.css" media-type="text/css" />
-		<!--<item id="css-02" href="css/page-02.css" media-type="text/css" />
+		<!--<item id="css-01" href="/OEBPS/css/page-01.css" media-type="text/css" />
+		<item id="css-02" href="css/page-02.css" media-type="text/css" />
 		<item id="css-03" href="css/page-03.css" media-type="text/css" />
 		<item id="css-04" href="css/page-04.css" media-type="text/css" />
 		<item id="css-05" href="css/page-05.css" media-type="text/css" />
@@ -111,34 +111,35 @@
 	</manifest>
 	
  	<spine>
-    	<itemref idref="page-01" />
-    	<itemref idref="page-02" />
-    	<itemref idref="page-03" />
-    	<itemref idref="page-04" />
-		<itemref idref="page-05" />
-		<itemref idref="page-06" />
-		<itemref idref="page-07" />
-		<itemref idref="page-08" />
-		<itemref idref="page-09" />
-		<itemref idref="page-10" />
-		<itemref idref="page-11" />
-		<itemref idref="page-12" />
-		<itemref idref="page-13" />
-		<itemref idref="page-14" />
-		<itemref idref="page-15" />
-		<itemref idref="page-16" />
-		<itemref idref="page-17" />
-		<itemref idref="page-18" />
-		<itemref idref="page-19" />
-		<itemref idref="page-20" />
-		<itemref idref="page-21" />
-		<itemref idref="page-22" />
-		<itemref idref="page-23" />
-		<itemref idref="page-24" />
-		<itemref idref="page-25" />
-		<itemref idref="page-26" />
-		<itemref idref="page-27" />
-		<itemref idref="page-28" />
+    	<itemref idref="toc" />
+    	<itemref idref="content-01" />
+        <!--<itemref idref="content-02" />
+        <itemref idref="content-03" />
+        <itemref idref="content-04" />
+        <itemref idref="content-05" />
+        <itemref idref="content-06" />
+        <itemref idref="content-07" />
+        <itemref idref="content-08" />
+        <itemref idref="content-09" />
+        <itemref idref="content-10" />
+        <itemref idref="content-11" />
+        <itemref idref="content-12" />
+        <itemref idref="content-13" />
+        <itemref idref="content-14" />
+        <itemref idref="content-15" />
+        <itemref idref="content-16" />
+        <itemref idref="content-17" />
+        <itemref idref="content-18" />
+        <itemref idref="content-19" />
+        <itemref idref="content-20" />
+        <itemref idref="content-21" />
+        <itemref idref="content-22" />
+        <itemref idref="content-23" />
+        <itemref idref="content-24" />
+        <itemref idref="content-25" />
+        <itemref idref="content-26" />
+        <itemref idref="content-27" />
+        <itemref idref="content-28" />-->
 	</spine>
 
 </package>
