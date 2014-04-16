@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<package xmlns="http://www.idpf.org/2007/opf" unique-identifier="bookid" version="3.0" prefix="rendition: http://www.idpf.org/vocab/rendition/# ibooks: http://vocabulary.itunes.apple.com/rdf/ibooks/vocabulary-extensions-1.0/">
+  <metadata xmlns="http://www.idpf.org/2007/opf" xmlns:dc="http://purl.org/dc/elements/1.1/" >
+		<dc:title>Test</dc:title>
+		<dc:language id="bookid" | opf:scheme="ISBN" | opf:scheme="URI">URN | urn:ISBN: | http://URL</dc:identifier>
+		<dc:language>en</dc:language>
+		<dc:date >2014-04-01</dc:date>
+		<meta property="dcterms:modified">2014-04-01T00:00:00Z</meta>
+		<meta property="rendition:layout">reflowable | pre-paginated</meta>
+		<meta property="rendition:spread">auto</meta>
+		<meta property="rendition:orientation">portrait | landscape | auto</meta>
+	<!--iBooks-->
+		<meta property="ibooks:version">1.0</meta>
+		<meta property="ibooks:specified-fonts">true | false</meta>
+	<!--Kindle
+		<meta name="original-resolution" content="1024x600"/>
+		<meta name="book-type" content="children"/>-->
+	<!--Illustrator-->
+		<dc:creator id="illustrator">ILLUSTRATOR NAME</dc:creator>
+		<meta refines="#illustrator" property="file-as">NAME, ILLUSTRATOR</meta>
+		<meta refines="#illustrator" property="role" scheme="marc:relators">ill</meta>
+		<meta refines="#illustrator" property="display-seq">2</meta>
+	<!--Author-->
+		<dc:creator id="author">AUTHOR NAME</dc:creator>
+		<meta refines="#author" property="file-as">NAME, AUTHOR</meta>
+		<meta refines="#author" property="role" scheme="marc:relators">aut</meta>
+		<meta refines="#author" property="display-seq">1</meta>
+	<!--Publisher & Rights-->
+		<dc:publisher>PUBLISHER NAME</dc:publisher>
+		<dc:rights>Copyright &#169; 2014 AUTHOR NAME. The moral right of the AUTHOR | AUTHORS has been asserted.</dc:rights>
+	<!--Media-->
+ 	</metadata>
+ 	<manifest>
+		<!--supplementary -->
+		<item id="toc-xhtml" media-type="application/xhtml+xml" href="/OEBPS/toc.xhtml" properties="nav" />
+	    <item id="css" href="/OEBPS/css/stylesheet.css" media-type="text/css" />
+		<item id="css-01" href="/OEBPS/css/page-01.css" media-type="text/css" />
+		<!--<item id="css-02" href="css/page-02.css" media-type="text/css" />
+		<item id="css-03" href="css/page-03.css" media-type="text/css" />
+		<item id="css-04" href="css/page-04.css" media-type="text/css" />
+		<item id="css-05" href="css/page-05.css" media-type="text/css" />
+		<item id="css-06" href="css/page-06.css" media-type="text/css" />
+		<item id="css-07" href="css/page-07.css" media-type="text/css" />
+		<item id="css-08" href="css/page-08.css" media-type="text/css" />
+		<item id="css-09" href="css/page-09.css" media-type="text/css" />
+		<item id="css-10" href="css/page-10.css" media-type="text/css" />
+		<item id="css-11" href="css/page-11.css" media-type="text/css" />
+		<item id="css-12" href="css/page-12.css" media-type="text/css" />
+		<item id="css-13" href="css/page-13.css" media-type="text/css" />
+		<item id="css-14" href="css/page-14.css" media-type="text/css" />
+		<item id="css-15" href="css/page-15.css" media-type="text/css" />
+		<item id="css-16" href="css/page-16.css" media-type="text/css" />
+		<item id="css-17" href="css/page-17.css" media-type="text/css" />
+		<item id="css-18" href="css/page-18.css" media-type="text/css" />
+		<item id="css-19" href="css/page-19.css" media-type="text/css" />
+		<item id="css-20" href="css/page-20.css" media-type="text/css" />
+		<item id="css-21" href="css/page-21.css" media-type="text/css" />
+		<item id="css-22" href="css/page-22.css" media-type="text/css" />
+		<item id="css-23" href="css/page-23.css" media-type="text/css" />
+		<item id="css-24" href="css/page-24.css" media-type="text/css" />
+		<item id="css-25" href="css/page-25.css" media-type="text/css" />	
+		<item id="css-26" href="css/page-26.css" media-type="text/css" />	
+		<item id="css-27" href="css/page-27.css" media-type="text/css" />	
+		<item id="css-28" href="css/page-28.css" media-type="text/css" />
+		-->
+		
+		<!--javascript-->
+		<!--<item id="js-accelerate" href="js/accelerate.js" media-type="application/javascript" />-->		
+	
+		<!--fonts-->
+	
+		<!--content-->	
+		<item id="content-01" href="content-01.xhtml" media-type="application/xhtml+xml" />
+		<!--
+		<item id="page-02" href="page-02.xhtml" media-type="application/xhtml+xml" />
+		<item id="page-03" href="page-03.xhtml" media-type="application/xhtml+xml" />
+		<item id="page-04" href="page-04.xhtml" media-type="application/xhtml+xml" />
+		<item id="page-05" href="page-05.xhtml" media-type="application/xhtml+xml" />
+		<item id="page-06" href="page-06.xhtml" media-type="application/xhtml+xml" />
+		<item id="page-07" href="page-07.xhtml" media-type="application/xhtml+xml" />
+		<item id="page-08" href="page-08.xhtml" media-type="application/xhtml+xml" />
+		<item id="page-09" href="page-09.xhtml" media-type="application/xhtml+xml" />
+		<item id="page-10" href="page-10.xhtml" media-type="application/xhtml+xml" />
+		<item id="page-11" href="page-11.xhtml" media-type="application/xhtml+xml" />
+		<item id="page-12" href="page-12.xhtml" media-type="application/xhtml+xml" />
+		<item id="page-13" href="page-13.xhtml" media-type="application/xhtml+xml" />
+		<item id="page-14" href="page-14.xhtml" media-type="application/xhtml+xml" />
+		<item id="page-15" href="page-15.xhtml" media-type="application/xhtml+xml" />
+		<item id="page-16" href="page-16.xhtml" media-type="application/xhtml+xml" />
+		<item id="page-17" href="page-17.xhtml" media-type="application/xhtml+xml" />
+		<item id="page-18" href="page-18.xhtml" media-type="application/xhtml+xml" />
+		<item id="page-19" href="page-19.xhtml" media-type="application/xhtml+xml" />		
+		<item id="page-20" href="page-20.xhtml" media-type="application/xhtml+xml" />
+		<item id="page-21" href="page-21.xhtml" media-type="application/xhtml+xml" />
+		<item id="page-22" href="page-22.xhtml" media-type="application/xhtml+xml" />
+		<item id="page-23" href="page-23.xhtml" media-type="application/xhtml+xml" />
+		<item id="page-24" href="page-24.xhtml" media-type="application/xhtml+xml" />
+		<item id="page-25" href="page-25.xhtml" media-type="application/xhtml+xml" />
+		<item id="page-26" href="page-26.xhtml" media-type="application/xhtml+xml" />
+		<item id="page-27" href="page-27.xhtml" media-type="application/xhtml+xml" />
+		<item id="page-28" href="page-28.xhtml" media-type="application/xhtml+xml" />
+		-->
+			
+		<!--images-->
+		<item id="cover" href="images/cover.jpg" media-type="image/jpeg" properties="cover-image" />
+		<!--<item id="page-01-background" href="images/bg-01.jpg" media-type="image/jpeg" />-->
+		
+		<!--av-->
+		
+		<!--smil-->
+	</manifest>
+	
+ 	<spine>
+    	<itemref idref="page-01" />
+    	<itemref idref="page-02" />
+    	<itemref idref="page-03" />
+    	<itemref idref="page-04" />
+		<itemref idref="page-05" />
+		<itemref idref="page-06" />
+		<itemref idref="page-07" />
+		<itemref idref="page-08" />
+		<itemref idref="page-09" />
+		<itemref idref="page-10" />
+		<itemref idref="page-11" />
+		<itemref idref="page-12" />
+		<itemref idref="page-13" />
+		<itemref idref="page-14" />
+		<itemref idref="page-15" />
+		<itemref idref="page-16" />
+		<itemref idref="page-17" />
+		<itemref idref="page-18" />
+		<itemref idref="page-19" />
+		<itemref idref="page-20" />
+		<itemref idref="page-21" />
+		<itemref idref="page-22" />
+		<itemref idref="page-23" />
+		<itemref idref="page-24" />
+		<itemref idref="page-25" />
+		<itemref idref="page-26" />
+		<itemref idref="page-27" />
+		<itemref idref="page-28" />
+	</spine>
+
+</package>
