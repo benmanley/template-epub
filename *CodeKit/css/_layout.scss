@@ -1,8 +1,81 @@
-h1 {
-    font-size: 1.618em;
+p, ul, ol, h1, h2 {
+    line-height: 1.618;
+    /* Disable automatic hyphenation – useful for poetry
+    -webkit-hyphens: none !important;
+    adobe-hyphenate: none;
+    -moz-hyphens: none;
+    hyphens: none;
+    */
 }
 
-h1, p {
-    line-height: 1.618;
-    margin-bottom: 1.618%;
+p, ul, ol, h2 {
+    margin-bottom: 1.618em;
 }
+
+ul, ol {
+    list-style: none;
+}
+
+/* Show numbering in a list
+ol {
+    list-style: decimal inside;    
+}
+*/
+
+h1 {
+    font-size: 1.618em;
+    margin: 0.618em 0;
+}
+
+p + h1 {
+    margin-top: 1.618em;
+}
+
+blockquote {
+    p {
+        margin-bottom: 0;
+    }
+}
+
+blockquote, cite, em {
+    font-style: italic;
+}
+
+#titlepage, #part-01 {
+    h1 {
+        margin-top: 38.2%;
+    }
+}
+
+a:link, a:visited, a:hover, a:active {}
+
+// Prevent orphaned en-dashes
+.en-dash {
+    display: inline-block;
+}
+
+// Table of Contents #toc
+nav {
+    margin-bottom: 2.618em;
+}
+
+//Hide landmarks nav from toc
+#landmarks {display: none;}
+
+nav {
+   //Hide list style in mobi
+   li { display: block;}
+   //Style list items that aren't chapters differently
+   a:not([href^="content"]) {
+       display: inline-block;
+       padding-bottom: 0.618em;
+   }
+   //Demarcate the beginning of a part
+   a[href^="part"] {
+       margin-top: 1.618em;
+   }  
+}
+
+// Special formatting
+
+@media not amzn-mobi, not amzn-kf8 {}
