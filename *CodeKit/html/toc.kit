@@ -1,38 +1,48 @@
-<!-- @import metadata-master.kit --><?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- @import metadata-master.kit --><!-- @import metadata-chapters.kit --><?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" xmlns:epub="http://www.idpf.org/2007/ops" xml:lang="en"
 	lang="en">
 	<head>
-		<title><!-- $book-title--> - Table of Contents</title>
+		<title><!-- $book-title--> - Contents</title>
 		<link rel="stylesheet" type="text/css" href="<!--$book-stylesheet-master-->" />
 	</head>
 	<body>
 		<nav epub:type="toc" id="toc">
-			<h1>Table of Contents</h1>
+			<h1>Contents</h1>
 			<ol>
-                <li><a href="content-01.xhtml">CH 1</a></li>
-                <li><a href="content-02.xhtml">CH 2</a></li>
-                <li><a href="content-03.xhtml">CH 3</a></li>
-                <li><a href="content-04.xhtml">CH 4</a></li>
-                <li><a href="content-05.xhtml">CH 5</a></li>
-                <li><a href="content-06.xhtml">CH 6</a></li>
-                <li><a href="content-07.xhtml">CH 7</a></li>
-                <li><a href="content-08.xhtml">CH 8</a></li>
-                <li><a href="content-09.xhtml">CH 9</a></li>
-                <li><a href="content-10.xhtml">CH 10</a></li>
-                <li><a href="content-11.xhtml">CH 11</a></li>
-                <li><a href="content-12.xhtml">CH 12</a></li>
-                <li><a href="content-13.xhtml">CH 13</a></li>
-                <li><a href="content-14.xhtml">CH 14</a></li>
-                <li><a href="content-15.xhtml">CH 15</a></li>
+				<li><a href="titlepage.xhtml"><!-- $titlepage-heading --></a></li>
+				<li><a href="toc.xhtml"><!-- $toc-heading --></a></li>
+				<li><a href="dedication.xhtml"><!-- $dedication-heading --></a></li>
+				<li><a href="part-01.xhtml"><!--$part-01-heading--></a>
+			        <ol>
+                        <li><a href="content-01.xhtml"><!--$content-01-heading--></a></li>
+                        <li><a href="content-02.xhtml"><!--$content-02-heading--></a></li>
+                        <li><a href="content-03.xhtml"><!--$content-03-heading--></a></li>
+                        <li><a href="content-04.xhtml"><!--$content-04-heading--></a></li>
+                        <li><a href="content-05.xhtml"><!--$content-05-heading--></a></li>
+                        <li><a href="content-06.xhtml"><!--$content-06-heading--></a></li>
+                        <li><a href="content-07.xhtml"><!--$content-07-heading--></a></li>
+                        <li><a href="content-08.xhtml"><!--$content-08-heading--></a></li>
+                        <li><a href="content-09.xhtml"><!--$content-09-heading--></a></li>
+                        <li><a href="content-10.xhtml"><!--$content-10-heading--></a></li>
+                        <li><a href="content-11.xhtml"><!--$content-11-heading--></a></li>
+                        <li><a href="content-12.xhtml"><!--$content-12-heading--></a></li>
+                        <li><a href="content-13.xhtml"><!--$content-13-heading--></a></li>
+                        <li><a href="content-14.xhtml"><!--$content-14-heading--></a></li>
+                        <li><a href="content-15.xhtml"><!--$content-15-heading--></a></li>
+        			</ol>
+        		</li>
+        		<li><a href="colophon.xhtml"><!-- $colophon-heading --></a></li>
+        	</ol>
+		</nav>
+		<nav epub:type="landmarks">
+			<ol>
+				<li><a href="titlepage.xhtml" epub:type="titlepage bodymatter"><!-- $titlepage-heading --></a></li>
+				<li><a href="toc.xhtml" epub:type="toc"><!-- $toc-heading --></a></li>
+				<li><a href="dedication.xhtml" epub:type="dedication"><!-- $dedication-heading --></a></li>
+				<li><a href="part-01.xhtml" epub:type="part"><!--$part-01-heading--></a></li>
+				<li><a href="colophon.xhtml" epub:type="backmatter colophon"><!-- $colophon-heading --></a></li>
 			</ol>
 		</nav>
-<!--		<nav epub:type="landmarks">
-			<ol>
-				<li><a href="page-01.xhtml" epub:type="cover">Cover</a></li>
-				<li><a href="page-02.xhtml" epub:type="bodymatter">Start</a></li>
-				<li><a href="page-28.xhtml" epub:type="other.back-cover">Back Cover</a></li>
-			</ol>
-		</nav>-->
 	</body>
 </html>
