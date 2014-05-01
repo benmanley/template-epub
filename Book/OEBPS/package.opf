@@ -2,13 +2,13 @@
 <package xmlns="http://www.idpf.org/2007/opf" unique-identifier="bookid" version="3.0" prefix="rendition: http://www.idpf.org/vocab/rendition/# ibooks: http://vocabulary.itunes.apple.com/rdf/ibooks/vocabulary-extensions-1.0/">
   <metadata xmlns="http://www.idpf.org/2007/opf" xmlns:dc="http://purl.org/dc/elements/1.1/" >
 		<dc:title>Test</dc:title>
-		<dc:identifier id="bookid" | opf:scheme="ISBN" | opf:scheme="URI">URN | urn:ISBN: | http://URL</dc:identifier>
+		<dc:identifier id="bookid">URN | urn:ISBN: | http://URL</dc:identifier>
 		<dc:language>en</dc:language>
-		<dc:date >2014-04-01</dc:date>
-		<meta property="dcterms:modified">2014-04-01T00:00:00Z</meta>
-		<meta property="rendition:layout">reflowable | pre-paginated</meta>
-		<meta property="rendition:spread">auto | both | none</meta>
-		<meta property="rendition:orientation">portrait | landscape | auto</meta>
+		<dc:date >2014-05-01</dc:date>
+		<meta property="dcterms:modified">2014-05-01T00:00:00Z</meta>
+		<meta property="rendition:layout">reflowable</meta>
+		<meta property="rendition:spread">auto</meta>
+		<meta property="rendition:orientation">auto</meta>
 	<!--iBooks-->
 		<meta property="ibooks:version">1.0</meta>
 		<meta property="ibooks:specified-fonts">true | false</meta>
@@ -20,20 +20,14 @@
 		<meta refines="#author" property="file-as">NAME, AUTHOR</meta>
 		<meta refines="#author" property="role" scheme="marc:relators">aut</meta>
 		<meta refines="#author" property="display-seq">1</meta>
-	<!--Illustrator-->
-		<dc:creator id="illustrator">ILLUSTRATOR NAME</dc:creator>
-		<meta refines="#illustrator" property="file-as">NAME, ILLUSTRATOR</meta>
-		<meta refines="#illustrator" property="role" scheme="marc:relators">ill</meta>
-		<meta refines="#illustrator" property="display-seq">2</meta>
 	<!--Publisher & Rights-->
 		<dc:publisher>PUBLISHER NAME</dc:publisher>
 		<dc:rights>Copyright &#169; 2014 AUTHOR NAME. The moral right of the AUTHOR | AUTHORS has been asserted.</dc:rights>
 	<!--Media-->
  	</metadata>
  	<manifest>
-		<!--supplementary -->
-		<item id="toc" media-type="application/xhtml+xml" href="/OEBPS/toc.xhtml" properties="nav" />
-	    <item id="css" href="/OEBPS/css/stylesheet.css" media-type="text/css" />
+		<!-- css -->
+	    <item id="css" href="css/stylesheet.css" media-type="text/css" />
 		<!--<item id="css-01" href="/OEBPS/css/page-01.css" media-type="text/css" />
 		<item id="css-02" href="css/page-02.css" media-type="text/css" />
 		<item id="css-03" href="css/page-03.css" media-type="text/css" />
@@ -70,6 +64,9 @@
 		<!--fonts-->
 	
 		<!--content-->	
+		<item id="titlepage" media-type="application/xhtml+xml" href="titlepage.xhtml" />
+		<item id="toc" media-type="application/xhtml+xml" href="toc.xhtml" properties="nav" />
+		<item id="dedication" media-type="application/xhtml+xml" href="dedication.xhtml" />
 		<item id="content-01" href="content-01.xhtml" media-type="application/xhtml+xml" />
 		<!--
 		<item id="page-02" href="page-02.xhtml" media-type="application/xhtml+xml" />
@@ -100,6 +97,7 @@
 		<item id="page-27" href="page-27.xhtml" media-type="application/xhtml+xml" />
 		<item id="page-28" href="page-28.xhtml" media-type="application/xhtml+xml" />
 		-->
+		<item id="colophon" media-type="application/xhtml+xml" href="colophon.xhtml" />
 			
 		<!--images-->
 		<item id="cover" href="images/cover.jpg" media-type="image/jpeg" properties="cover-image" />
@@ -111,7 +109,9 @@
 	</manifest>
 	
  	<spine>
+    	<itemref idref="titlepage" />
     	<itemref idref="toc" />
+    	<itemref idref="dedication" />
     	<itemref idref="content-01" />
         <!--<itemref idref="content-02" />
         <itemref idref="content-03" />
@@ -140,6 +140,7 @@
         <itemref idref="content-26" />
         <itemref idref="content-27" />
         <itemref idref="content-28" />-->
+        <itemref idref="colophon" />
 	</spine>
 
 </package>

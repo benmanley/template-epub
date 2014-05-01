@@ -1,2 +1,4 @@
 # CodeKit cache files
 .scssc
+# Build files
+Book/
